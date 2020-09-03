@@ -1,0 +1,10 @@
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\bin\Release\DBMCleaner.exe.config
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\bin\Release\DBMCleaner.exe
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\bin\Release\DBMCleaner.pdb
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Release\DBMCleaner.Cleaner.resources
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Release\DBMCleaner.Properties.Resources.resources
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Release\DBMCleaner.csproj.GenerateResource.cache
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Release\DBMCleaner.csproj.CoreCompileInputs.cache
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Release\DBMCleaner.exe
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Release\DBMCleaner.pdb
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Release\DBMCleaner.csprojAssemblyReference.cache
