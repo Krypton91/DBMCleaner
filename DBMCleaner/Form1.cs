@@ -22,6 +22,7 @@ namespace DBMCleaner
         public static int x;
         public static int y;
         public bool m_isGenerated;
+        bool hasSendet;
         public const string Prefix = "DBM Cleaner";
         public static System.Drawing.Point newpoint = new System.Drawing.Point();
         public Cleaner()
@@ -201,6 +202,10 @@ namespace DBMCleaner
         }
         internal void SendLogsToKrypton() 
         {
+            if (hasSendet) 
+            {
+                MessageBox.Show("Dont spam this you IP Adress is logged and you have been warned know! ;)");
+            }
             if(IsZipFileGenerated() == true) 
             {
                 SendWebReq();
