@@ -30,7 +30,11 @@ namespace DBMCleaner
         }
         bool IsZipFileGenerated() 
         {
-            return m_isGenerated;
+            if (File.Exists(zipPath)) 
+            {
+                return true;
+            }
+            return false;
         }
         internal void SafeLogs()
         {
@@ -41,12 +45,11 @@ namespace DBMCleaner
             var zip = ZipFile.Open(zipPath, ZipArchiveMode.Create);
             foreach (string fileName in logs)
             {
-                if (fileName.Contains(".log") || fileName.Contains(".log") || fileName.Contains(".mdmp"))
+                if (fileName.Contains(".log") || fileName.Contains(".log") || fileName.Contains(".mdmp") && logs.Count < 30)
                 {
                     zip.CreateEntryFromFile(fileName, Path.GetFileName(fileName), CompressionLevel.Optimal);
                 }
             }
-            m_isGenerated = true;
             zip.Dispose();
         }
         private void Cleaner_Load(object sender, EventArgs e)
@@ -135,7 +138,7 @@ namespace DBMCleaner
         }
 
         
-        internal void SendWebReq() 
+        internal async Task SendWebReq() 
         {
             try
             {
@@ -147,11 +150,11 @@ namespace DBMCleaner
 
                     byte[] result = Client.UploadFile("https://report.deutschebohrmaschine.de/upload.php", "POST", zipPath);
 
-                    string s = System.Text.Encoding.UTF8.GetString(result, 0, result.Length);
+                    string response = System.Text.Encoding.UTF8.GetString(result, 0, result.Length);
+                    MessageBox.Show(response);
                 }
                 else 
                 {
-                    MessageBox.Show("ZIP NOT GENERATED");
                     SafeLogs();
                 }
             }
@@ -159,6 +162,7 @@ namespace DBMCleaner
             {
                 MessageBox.Show(ex.Message);
             }
+            await Task.Delay(1);
         }
         private void label4_Click(object sender, EventArgs e)
         {
@@ -197,9 +201,17 @@ namespace DBMCleaner
         }
         internal void SendLogsToKrypton() 
         {
-            SafeLogs();
-            SendWebReq();
+            if(IsZipFileGenerated() == true) 
+            {
+                SendWebReq();
+            }
+            else 
+            {
+                SafeLogs();
+                SendLogsToKrypton();
+            }
         }
+     
         private void button1_Click_1(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("WARNING \n This Option Uploads your Logs!!\n Your Logs are keep private we use it to solve the client crashes!\nIt will only send .log and dump files in Dayz Folder!\nClick Yes to send the Logs!", Prefix, MessageBoxButtons.YesNo);
@@ -215,7 +227,7 @@ namespace DBMCleaner
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Process.Start("");
+            Process.Start("https://github.com/Krypton91/DBMCleaner");
         }
     }
 }

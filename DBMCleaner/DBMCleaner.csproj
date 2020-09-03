@@ -93,6 +93,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
+    <None Include="Resources\1024px-GitHub_logo_2013.svg.png" />
+    <None Include="Resources\png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
