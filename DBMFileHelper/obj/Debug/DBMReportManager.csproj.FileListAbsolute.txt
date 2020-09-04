@@ -1,0 +1,15 @@
+C:\Users\Patrick\Desktop\Dayz_DB\DBMCleaner-master\DBMFileHelper\bin\Debug\DBMReportManager.dll
+C:\Users\Patrick\Desktop\Dayz_DB\DBMCleaner-master\DBMFileHelper\bin\Debug\DBMReportManager.pdb
+C:\Users\Patrick\Desktop\Dayz_DB\DBMCleaner-master\DBMFileHelper\obj\Debug\DBMReportManager.Properties.Resources.resources
+C:\Users\Patrick\Desktop\Dayz_DB\DBMCleaner-master\DBMFileHelper\obj\Debug\DBMReportManager.csproj.GenerateResource.cache
+C:\Users\Patrick\Desktop\Dayz_DB\DBMCleaner-master\DBMFileHelper\obj\Debug\DBMReportManager.csproj.CoreCompileInputs.cache
+C:\Users\Patrick\Desktop\Dayz_DB\DBMCleaner-master\DBMFileHelper\obj\Debug\DBMReportManager.dll
+C:\Users\Patrick\Desktop\Dayz_DB\DBMCleaner-master\DBMFileHelper\obj\Debug\DBMReportManager.pdb
+C:\Users\Krypton\source\repos\DBMCleaner\DBMFileHelper\bin\Debug\DBMReportManager.dll
+C:\Users\Krypton\source\repos\DBMCleaner\DBMFileHelper\bin\Debug\DBMReportManager.pdb
+C:\Users\Krypton\source\repos\DBMCleaner\DBMFileHelper\obj\Debug\DBMReportManager.csprojAssemblyReference.cache
+C:\Users\Krypton\source\repos\DBMCleaner\DBMFileHelper\obj\Debug\DBMReportManager.Properties.Resources.resources
+C:\Users\Krypton\source\repos\DBMCleaner\DBMFileHelper\obj\Debug\DBMReportManager.csproj.GenerateResource.cache
+C:\Users\Krypton\source\repos\DBMCleaner\DBMFileHelper\obj\Debug\DBMReportManager.csproj.CoreCompileInputs.cache
+C:\Users\Krypton\source\repos\DBMCleaner\DBMFileHelper\obj\Debug\DBMReportManager.dll
+C:\Users\Krypton\source\repos\DBMCleaner\DBMFileHelper\obj\Debug\DBMReportManager.pdb

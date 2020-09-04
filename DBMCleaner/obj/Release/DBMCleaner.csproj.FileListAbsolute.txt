@@ -8,3 +8,6 @@ C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Release\DBMCleaner.cspro
 C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Release\DBMCleaner.exe
 C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Release\DBMCleaner.pdb
 C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Release\DBMCleaner.csprojAssemblyReference.cache
+C:\Users\Patrick\Desktop\Dayz_DB\DBMCleaner-master\DBMCleaner\obj\Release\DBMCleaner.csprojAssemblyReference.cache
+C:\Users\Patrick\Desktop\Dayz_DB\DBMCleaner-master\DBMCleaner\obj\Release\DBMCleaner.exe
+C:\Users\Patrick\Desktop\Dayz_DB\DBMCleaner-master\DBMCleaner\obj\Release\DBMCleaner.pdb
