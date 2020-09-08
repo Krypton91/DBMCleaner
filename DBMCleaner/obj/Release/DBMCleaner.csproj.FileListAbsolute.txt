@@ -11,3 +11,11 @@ C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Release\DBMCleaner.cspro
 C:\Users\Patrick\Desktop\Dayz_DB\DBMCleaner-master\DBMCleaner\obj\Release\DBMCleaner.csprojAssemblyReference.cache
 C:\Users\Patrick\Desktop\Dayz_DB\DBMCleaner-master\DBMCleaner\obj\Release\DBMCleaner.exe
 C:\Users\Patrick\Desktop\Dayz_DB\DBMCleaner-master\DBMCleaner\obj\Release\DBMCleaner.pdb
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\bin\Release\DBMReportManager.dll
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\bin\Release\DBMReportManager.pdb
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Release\DBMCleaner.csproj.CopyComplete
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\bin\Release\DBMCleaner.exe.manifest
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\bin\Release\DBMCleaner.application
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Release\DBMCleaner.TrustInfo.xml
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Release\DBMCleaner.exe.manifest
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Release\DBMCleaner.application

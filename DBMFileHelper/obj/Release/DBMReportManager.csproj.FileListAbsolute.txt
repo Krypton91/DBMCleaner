@@ -1,0 +1,8 @@
+C:\Users\Krypton\source\repos\DBMCleaner\DBMFileHelper\bin\Release\DBMReportManager.dll
+C:\Users\Krypton\source\repos\DBMCleaner\DBMFileHelper\bin\Release\DBMReportManager.pdb
+C:\Users\Krypton\source\repos\DBMCleaner\DBMFileHelper\obj\Release\DBMReportManager.csprojAssemblyReference.cache
+C:\Users\Krypton\source\repos\DBMCleaner\DBMFileHelper\obj\Release\DBMReportManager.Properties.Resources.resources
+C:\Users\Krypton\source\repos\DBMCleaner\DBMFileHelper\obj\Release\DBMReportManager.csproj.GenerateResource.cache
+C:\Users\Krypton\source\repos\DBMCleaner\DBMFileHelper\obj\Release\DBMReportManager.csproj.CoreCompileInputs.cache
+C:\Users\Krypton\source\repos\DBMCleaner\DBMFileHelper\obj\Release\DBMReportManager.dll
+C:\Users\Krypton\source\repos\DBMCleaner\DBMFileHelper\obj\Release\DBMReportManager.pdb

@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using DBMReportManager.Constants;
 using DBMReportManager.Enum;
@@ -55,18 +52,18 @@ namespace DBMReportManager.Manager
 
     public void SaveLogs (string zipPath, ZipArchive zip, string log)
     {
-      var fileExtension = Path.GetExtension (log);
-            try
+       var fileExtension = Path.GetExtension (log);
+       try
+       {
+            if (fileExtension == ".log" || fileExtension == ".mdmp")
             {
-                if (fileExtension == ".log" || fileExtension == ".mdmp")
-                {
-                    zip.CreateEntryFromFile(log, Path.GetFileName(log));
-                }
+               zip.CreateEntryFromFile(log, Path.GetFileName(log));
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+       }
+       catch (Exception ex)
+       {
+          MessageBox.Show(ex.Message);
+       }
     }
 
     public void DeleteLogs (Form frm, List<string> logs)

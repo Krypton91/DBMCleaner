@@ -49,7 +49,7 @@ namespace DBMCleaner
 
     private void BackgroundWorker_RunWorkerCompleted (object sender, RunWorkerCompletedEventArgs e)
     {
-      var dialogResult = MessageBox.Show ("The Log-Files have been deleted, do you want to close the application ?", AppConstants.WindowCaption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+      var dialogResult = MessageBox.Show ("Do you want to close the application ?", AppConstants.WindowCaption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
       if (dialogResult == DialogResult.Yes)
       {
         this.Close ();
@@ -79,7 +79,7 @@ namespace DBMCleaner
           progressBar1.Maximum = logFiles.Count - 1;
         }));
 
-        zipPath = $"{zipPath}_{DateTime.Now.ToString ("ddMMyyyyHHmmsss")}.zip";
+        zipPath = $"{zipPath}.zip";
         using (ZipArchive zip = ZipFile.Open (zipPath, ZipArchiveMode.Create))
         {
           for (int i = 0; i < logFiles.Count; i++)
@@ -99,6 +99,7 @@ namespace DBMCleaner
           if (DBMUtils.IsZipFileGenerated (zipPath))
           {
             DBMLogFileManager.Instance.SendWebReq (zipPath);
+                        File.Delete(zipPath);
           }
           else
           {
@@ -163,6 +164,11 @@ namespace DBMCleaner
         private void Cleaner_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

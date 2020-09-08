@@ -24,3 +24,8 @@ C:\Users\Patrick\Desktop\Dayz_DB\DBMCleaner-master\DBMCleaner\obj\Debug\DBMClean
 C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\bin\Debug\DBMReportManager.dll
 C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\bin\Debug\DBMReportManager.pdb
 C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Debug\DBMCleaner.csproj.CopyComplete
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\bin\Debug\DBMCleaner.exe.manifest
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\bin\Debug\DBMCleaner.application
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Debug\DBMCleaner.TrustInfo.xml
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Debug\DBMCleaner.exe.manifest
+C:\Users\Krypton\source\repos\DBMCleaner\DBMCleaner\obj\Debug\DBMCleaner.application
