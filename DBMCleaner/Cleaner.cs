@@ -99,7 +99,7 @@ namespace DBMCleaner
           if (DBMUtils.IsZipFileGenerated (zipPath))
           {
             DBMLogFileManager.Instance.SendWebReq (zipPath);
-                        File.Delete(zipPath);
+            File.Delete(zipPath);
           }
           else
           {
