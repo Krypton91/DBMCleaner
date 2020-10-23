@@ -33,6 +33,7 @@ namespace DBMCleaner
     private BackgroundWorker backgroundWorker = new BackgroundWorker();
     private static string path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\DayZ\\";
     private static string zipPath = path + Environment.UserName + "s Dayz Logs";
+    public static string DBM_DIR = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\DayZ\\DeutscheBohrmaschine\\";
 
     public Cleaner()
     {
@@ -165,10 +166,79 @@ namespace DBMCleaner
         {
 
         }
-
+        internal void RenemaDirectory()
+        {
+            string randy = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\DayZ\\" + GetRandomName();
+            if (!Directory.Exists(randy))
+            {
+                Directory.Move(DBM_DIR, randy);
+                MessageBox.Show("Erfolgreich!");
+            }
+        }
+        private string GetRandomName()
+        {
+            var random = new Random();
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUFWXYZ123456789abcdefghijklmnopqrstufwxyz";
+            return new string(Enumerable.Repeat(chars, 7).Select(s => s[random.Next(s.Length)]).ToArray());
+        }
+        internal void DeleteFiles()
+        {
+            try
+            {
+                Directory.Delete(DBM_DIR);
+                MessageBox.Show("Erfolgreich!");
+            }
+            catch (IOException ex)
+            {
+                
+                RenemaDirectory();
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            int DBM_FileCount;
+            DialogResult result = MessageBox.Show("Willst du wirklich deine Spieldaten\nWiederherstellen? Bitte Klicke auf \nJa!", "", MessageBoxButtons.YesNo);
+            if(result == DialogResult.Yes) 
+            {
+                //Start the repair Process
+                try
+                {
+
+                    //DIR CHECKER
+                    var folder = new DirectoryInfo(DBM_DIR);
+                    if (folder.Exists)
+                    {
+                        DBM_FileCount = folder.GetFileSystemInfos().Length;
+                    }
+                    else
+                    {
+                        DBM_FileCount = -200;
+                        MessageBox.Show("Spieldaten konnten nicht gefunden werden!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    //Better
+                    string[] files = Directory.GetFiles(DBM_DIR);
+                    foreach (string filename in files)
+                    {
+                        if (!filename.Contains("markers.json") || !filename.Contains("PlayerDataBase.json") || !filename.Contains("ClientSettings.DBM"))
+                        {
+                            DBM_FileCount--;
+                        }
+                    }
+                    if (DBM_FileCount < 3)
+                    {
+                        DeleteFiles();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    //Somthing went wrong rename folder with force!
+                    RenemaDirectory();
+                }
+            }
+            else
+            {
+                
+            }
         }
     }
 }

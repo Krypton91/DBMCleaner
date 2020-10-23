@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DBMCleaner.exe" size="148992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DBMCleaner.exe" size="151040">
       <assemblyIdentity name="DBMCleaner" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>UBhqHDbbt/kxjLW1dmfWI64UC1IU/wPYAeaKbaHTtbE=</dsig:DigestValue>
+        <dsig:DigestValue>Td+qOMHPibBI+ksUPOGmeAPwL+Ej7htfxxiwC5Oo1hk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MQneb/gE9mrJfo/97DFdgHCp+KaeKAoJr6hIbIfFw4Q=</dsig:DigestValue>
+        <dsig:DigestValue>wEOgKEjFPHR6Zp1Gt0mw3fUXwc9EpoL+ju7DIKacDgs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

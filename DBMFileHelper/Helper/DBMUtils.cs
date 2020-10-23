@@ -37,6 +37,7 @@ namespace DBMReportManager.Helper
     {
       return ConvertBytes (Size, 0);
     }
+    
     public static bool IsZipFileGenerated (string zipPath)
     {
         if (File.Exists (zipPath))
